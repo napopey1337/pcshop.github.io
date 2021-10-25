@@ -1,0 +1,262 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+/* название компании */
+
+/* меню */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #03042b;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #ffffff;}
+.menu-main a.current, .menu-main a:hover{color: #ffffff;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #ff0000;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+/*градиент*/
+.logo{
+    text-align: center;
+    display: block;
+    background-color:#920000;
+    padding:5px;
+    font-family: 'Alegreya SC', serif;
+    color: transparent;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    font-family: 'Righteous', cursive;
+    background-size: 300%;
+    font-size:60px;
+    letter-spacing: -2px;
+    animation: moveAnimation 10s linear infinite;
+    }
+    @keyframes moveAnimation{
+        from{
+            background-position: -300% -300%;
+        }
+        to{
+            background-position: 300% 300%;
+        }
+    }
+ /* подвал */
+ .footer_wrapper{
+    background:#000000;
+    padding-bottom: 80px;
+    padding-top:65px;
+}
+.footer_container{
+    position: relative;
+}
+.footer_body{
+    display: flex;  
+
+}
+.footer_item{
+    flex:1 1 auto;
+}
+.footer_social{
+    align-self: flex-end;
+    font-size: 2.7rem;
+    color: rgb(255, 255, 255);
+    margin-right: 35px;
+}
+.list-footer_header{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-family: 'Russo One', sans-serif;
+    margin-bottom: 2rem;
+}
+.list-footer_item{
+    margin-bottom: .6rem;
+}
+.list-footer_link{
+    display: inline-block;
+    color:rgb(255, 255, 255);
+}
+.scroll-top{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    color: rgb(168, 148, 148);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.social-footer_link{
+    display: inline-block;
+    color: #fff;
+    font-size: 2.6rem;
+    margin-right: 1rem;
+    transition: .3s;
+    padding-inline:.5rem;
+}
+.social-footer_link:last-of-type{
+    margin-right: 0;
+}
+.social-footer_link:hover{
+   transition: 0.4s ease-in;
+    transform:scale(1.5) rotate(10deg);
+}
+
+
+
+   .footer_social{
+    align-self: flex-end;
+    font-size: 2.7rem;
+    color: rgb(255, 255, 255);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.social-footer_link:hover{
+   transition: 0.4s ease-in;
+    transform:scale(1.5) rotate(10deg);
+}
+.icon_steam:hover{
+    color: rgb(82, 151, 190);
+    text-shadow:  0 0 4px rgb(47, 85, 107),
+    0 0 8px rgb(84, 139, 184),
+   0 0 12px rgb(78, 131, 174),
+   0 0 16px rgb(68, 115, 154),
+   0 0 18px rgb(89, 141, 184)
+   ;
+   transition: 0.4s ease-in;
+}
+   .icon_telegram:hover{
+    color: rgb(0, 136, 204);
+    text-shadow:  0 0 4px rgb(0, 102, 154),
+    0 0 8px rgb(0, 108, 162),
+   0 0 12px rgb(0, 92, 138),
+   0 0 16px rgb(0, 85, 128),
+   0 0 18px rgb(1, 74, 111)
+   ;
+   transition: 0.4s ease-in;
+}
+.icon_discord:hover{
+    color: rgb(114, 137, 217);
+    text-shadow:  0 0 4px rgb(92, 109, 172),
+    0 0 8px rgb(105, 124, 194),
+   0 0 12px rgb(88, 105, 165),
+   0 0 16px rgb(75, 89, 140),
+   0 0 18px rgb(63, 76, 120)
+   ;
+   transition: 0.4s ease-in;
+}
+.icon_vk:hover{
+    color:rgb(76, 117, 163);
+        text-shadow: 0 0 4px rgb(120, 183, 255),
+                     0 0 8px rgb(64, 98, 137),
+                    0 0 12px rgb(57, 89, 125),
+                    0 0 16px rgb(55, 83, 114),
+                    0 0 18px rgb(50, 77, 109)
+                    ;
+                    transition: 0.4s ease-in;
+    }
+/* слайдер */
+/*слайд-шоу*/
+* {box-sizing: border-box}
+      body {
+      font-family: Verdana;
+      margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      .slideshow-container {
+      
+      position: relative;
+      margin: auto;
+      }
+      /* Кнопки next & previous*/
+     
+      /* Измените положение "next button" */
+      .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      }
+      /* Добавьте черный фоновый цвет с небольшой прозрачностью*/
+      .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      }
+      /* Подпись под изображением */
+      .text {
+      color: #ffffff;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      font-size:45px;
+      padding:5px;
+    font-family: 'Alegreya SC', serif;
+    color: transparent;
+    background: linear-gradient(180deg, #fc0000, #ff7b00, #e5ff00 );
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    font-family: 'Righteous', cursive;
+    background-size: 300%;
+    font-size:80px;
+    letter-spacing: -2px;
+    animation: moveAnimation 10s linear infinite;
+    }
+    @keyframes moveAnimation{
+        from{
+            background-position: -300% -300%;
+        }
+        to{
+            background-position: 300% 300%;
+        }
+    }
+    /* товары */
+    
